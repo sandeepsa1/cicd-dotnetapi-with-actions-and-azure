@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dotnet-cicd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+959eb0943f7ec774215e011e3e2b4d819dd3042f")]
 [assembly: System.Reflection.AssemblyProductAttribute("dotnet-cicd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dotnet-cicd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
