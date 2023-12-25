@@ -1,0 +1,28 @@
+name: dotnet-cicd-publish
+on:
+  workflow_dispatch: #To trigger from the github
+  push:
+    branches: [ "main" ] #Trigger when pushed from GIT
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest #OS
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: setup .NET	#.NET version
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore
+        run: dotnet restore dotnet-cicd/dotnet-cicd.sln
+
+      - name: Build
+        run: dotnet build dotnet-cicd/dotnet-cicd.sln --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish dotnet-cicd/dotnet-cicd.sln --configuration Release --no-build
