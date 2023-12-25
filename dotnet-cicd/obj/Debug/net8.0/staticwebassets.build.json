@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "MQnTlnL+aifu4hCR2CxLAUmsxvM3eZQpTpJHhcm0sFY=",
+  "Source": "dotnet-cicd",
+  "BasePath": "_content/dotnet-cicd",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
