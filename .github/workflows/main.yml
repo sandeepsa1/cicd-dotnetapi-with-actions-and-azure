@@ -8,7 +8,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: test-app-for-cicd-azure
-  AZURE_WEBAPP_PACKAGE_PATH: "./publish"
+  AZURE_WEBAPP_PACKAGE_PATH: "dotnet-cicd/publish"
 
 jobs:
   publish:
